@@ -3,6 +3,10 @@ import requests
 import struct
 import keyboard
 import time
+import warnings
+
+warnings.filterwarnings("ignore")
+os.environ['PYTHONWARNINGS'] = 'ignore'
 
 def download_system_file_pdb():
     os.system('')
@@ -80,7 +84,7 @@ def download_system_file_pdb():
                         last_switch_time = current_time
 
                         if is_first_line:
-                            print("\033[A\033[K" + "Проверка то что программа работает (Если текст перестал прыгать то программа зависла)" + "\n" + " " * 30 + "\r", end="")
+                            print("\033[A\033[K" + "Проверка то что программа работает (Если текст перестал прыгать то программа зависла)" + "\n" + " " * 100 + "\r", end="")
                         else:
                             print("\033[A\033[K" + " " * 30 + "\n" + "Проверка то что программа работает (Если текст перестал прыгать то программа зависла)" + "\r", end="")
             print("")
