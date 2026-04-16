@@ -15,9 +15,13 @@ def download_system_file_pdb():
 
     print("Чтобы программа работала тебе нужен Windows")
 
+    time.sleep(0.5)
+
     print("")
 
     print("Работает только если у Microsoft есть файл pdb для этого файла")
+
+    time.sleep(0.5)
 
     system_file_path = input('Путь до системного файла (Или просто перетащи сюда): ').strip('"')
     save_dir = os.path.join(os.path.expanduser("~"), input('В какую папку (Которая находится в ~ а именно в папке твоего пользователя) ты установишь файл (Или просто перетащи сюда): ').strip('"'))
