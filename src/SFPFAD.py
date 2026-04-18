@@ -11,24 +11,8 @@ os.environ['PYTHONWARNINGS'] = 'ignore'
 def download_system_file_pdb():
     os.system('')
 
-    print("SFPFAD (System File PDB Find And Download) TOOL")
-
-    time.sleep(0.5)
-
-    print("")
-
-    print("Чтобы программа работала тебе нужен Windows")
-
-    time.sleep(0.5)
-
-    print("")
-
-    print("Работает только если у Microsoft есть файл pdb для этого файла")
-
-    time.sleep(0.5)
-
-    system_file_path = input('Путь до системного файла (Или просто перетащи сюда): ').strip('"')
-    save_dir = os.path.join(os.path.expanduser("~"), input('В какую папку (Которая находится в ~ а именно в папке твоего пользователя) ты установишь файл (Или просто перетащи сюда): ').strip('"'))
+    system_file_path = input('Путь до системного файла (Поддерживается D&D): ').strip('"')
+    save_dir = input('Путь до папки куда сохранится файл (Поддерживается D&D): ').strip('"')
 
     with open(system_file_path, "rb") as f:
         data = f.read()
@@ -101,6 +85,3 @@ def download_system_file_pdb():
     print("Нажмите ENTER чтобы продолжить...")
 
     keyboard.wait('enter')
-
-if __name__ == "__main__":
-    download_system_file_pdb()
