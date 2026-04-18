@@ -1,7 +1,6 @@
 import os
 import requests
 import struct
-import keyboard
 import time
 import warnings
 
@@ -79,9 +78,3 @@ def download_system_file_pdb():
     except Exception as e:
         print("")
         print(f"Ошибка при скачивании: {e}")
-
-    print("")
-
-    print("Нажмите ENTER чтобы продолжить...")
-
-    keyboard.wait('enter')

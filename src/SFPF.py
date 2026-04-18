@@ -1,11 +1,9 @@
 import os
 import struct
-import keyboard
 import warnings
 
 warnings.filterwarnings("ignore")
 os.environ['PYTHONWARNINGS'] = 'ignore'
-
 
 def get_system_file_pdb_link():
     os.system('')
@@ -47,6 +45,3 @@ def get_system_file_pdb_link():
 
     except Exception as e:
         print(f"\nОшибка при анализе файла: {e}")
-
-    print("\nНажмите ENTER чтобы выйти...")
-    keyboard.wait('enter')

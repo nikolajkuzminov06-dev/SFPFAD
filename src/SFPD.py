@@ -1,6 +1,5 @@
 import os
 import requests
-import keyboard
 import warnings
 
 warnings.filterwarnings("ignore")
@@ -35,6 +34,3 @@ def download_by_link():
             print(f"\nОшибка сервера: {r.status_code}")
     except Exception as e:
         print(f"\nОшибка: {e}")
-
-    print("\nНажмите ENTER для выхода...")
-    keyboard.wait('enter')
