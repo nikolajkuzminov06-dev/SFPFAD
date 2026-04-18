@@ -5,4 +5,6 @@ System File PDB Find And Download
 
 Но часть сделал сам
 
+Полностью портативно
+
 > <sub>Пока что бета/альфа</sub>

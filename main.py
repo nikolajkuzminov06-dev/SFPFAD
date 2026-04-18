@@ -1,6 +1,7 @@
 from src import SFPF
 from src import SFPD
 from src import SFPFAD
+import time
 
 while True:
     print("Меню")
@@ -8,6 +9,7 @@ while True:
     print("2. Найти")
     print("3. Скачать")
     print("0. Выйти")
+
     choice = input('--> ')
 
     if choice == "1":
@@ -24,3 +26,5 @@ while True:
 
     else:
         print("Неверный ввод")
+        time.sleep(0.5)
+        continue
